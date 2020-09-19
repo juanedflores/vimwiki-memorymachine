@@ -9,7 +9,7 @@ CONTENTS                                       *vimwiki-memorymachine-contents*
 
 
 Original Author:    Juan Flores 
-License:            The Unlicense
+License:            MIT License 
 
 ==============================================================================
 INTRODUCTION                                *nvim-example-python-plugin-intro*
