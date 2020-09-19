@@ -1,19 +1,21 @@
-*nvim-example-python-plugin.txt* A template of a remote Python plugin.
+*vimwiki-memorymachine.txt*    A vimwiki strength analyzer.
 
-                  Example Remote Python Plugin
+                  vimwiki-memorymachine
 
 ==============================================================================
+CONTENTS                                       *vimwiki-memorymachine-contents*
 
-CONTENTS                                 *nvim-example-python-plugin-contents*
-
-    1. Introduction .................... |nvim-example-python-plugin-intro|
+    1. Introduction ........................ |vimwiki-memorymachine-intro|
 
 
-Original Author:    Jacob Simpson
+Original Author:    Juan Flores 
 License:            The Unlicense
 
+==============================================================================
 INTRODUCTION                                *nvim-example-python-plugin-intro*
 
-A very simple example of a Python plugin in the new remote plugin style used by
-Neovim.
+This plugin is meant to work with vimwiki. With this plugin you can call a function
+to declare a vimwiki index as a memory machine wiki. This will provide some stats of
+all wiki links in the file with relevant information about the files that they point to.
 
+vim:tw=78:sw=2:ts=2:ft=help:norl:nowrap:
