@@ -1,11 +1,14 @@
-import neovim
+import pynvim
 
-@neovim.plugin
+
+@pynvim.plugin
 class Main(object):
-    def __init__(self, vim):
-        self.vim = vim
 
-    @neovim.function('DoItPython')
-    def doItPython(self, args):
-        self.vim.command('echo "hello from DoItPython"')
+    def __init__(self, nvim):
+        self.nvim = nvim
 
+    @pynvim.function('GetFileContents', sync=True)
+    def getFileContents(self, args):
+        for i in range(len(self.nvim.current.buffer)):
+            self.nvim.current.buffer[i] += str(
+                len(self.nvim.current.buffer[i]))
