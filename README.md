@@ -7,11 +7,17 @@ This simple plugin is meant to work with vimwiki to inform a user what wikis are
 * python3 support
 * vimwiki
 
+## Installation
+Example with vim-plug:
+```
+Plug 'juaneduardoflores/vimwiki-memorymachine', { 'do': ':UpdateRemotePlugins' }
+```
+
 ## How to Use
 Variables to define:
 ```
 let g:MemMachineEnable = 0
-let g:MemMachineIndex = "/Path/To/Your/MemMachineWiki.md
+let g:MemMachineIndex = "/Path/To/Your/MemMachineWiki.md"
 ```
 Commands:
 ```
