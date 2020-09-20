@@ -7,6 +7,17 @@ This simple plugin is meant to work with vimwiki to inform a user what wikis are
 * python3 support
 * vimwiki
 
+## How to Use
+Variables to define:
+```
+let g:MemMachineEnable = 0
+let g:MemMachineIndex = "/Path/To/Your/MemMachineWiki.md
+```
+Commands:
+```
+:MemMachineToggle - Toggle Plugin
+```
+
 ### Inspiration
 
 This plugin is inspired by the well known 1945 essay "As We May Think" published in The Atlantic written by Vannevar Bush: https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
