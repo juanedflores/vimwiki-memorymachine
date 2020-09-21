@@ -55,12 +55,16 @@ class Main(object):
 
                         # find how many spaces to append.
                         # get the longest char line.
-                        # TODO: get amount of all hidden vimwiki chars (bold, italics)
+                        # TODO:
                         visiblelength = lengthofline - \
                             (len(match_dir) + 4) - backticks
                         spaces = ""
                         if (visiblelength < 60):
                             spaces += " " * (60 - visiblelength)
+
+                        # append info
+                        # buf[i] += ' ' + \
+                        # '[ ' + str(len(match_dir_path_dirs)) + ' ]'
 
                         buf[i] += spaces + "files: " + \
                             str(len(match_dir_path_dirs))
@@ -77,7 +81,7 @@ class Main(object):
         self.toggle = not self.toggle
         self.nvim.command('call GetFileContents()')
 
-    @ pynvim.autocmd('BufEnter', pattern='*.md', eval=None, sync=False)
+    @ pynvim.autocmd('BufWinEnter', pattern='*.md', eval=None, sync=False)
     def on_vimwikienter(self):
         is_enabled = self.nvim.eval('g:MemMachineEnable')
         buf = self.nvim.current.buffer
