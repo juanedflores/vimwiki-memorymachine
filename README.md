@@ -1,5 +1,7 @@
 # Vimwiki Memory Machine
 
+NOTE: This project is depracated after nvim 0.5. As nvim moves to lua support, it might be best to feel the room and see what note taking plugin rises to the top.
+
 ## What it does
 This simple plugin is meant to work with vimwiki to inform a user what wikis are most visited, and most developed.
 
